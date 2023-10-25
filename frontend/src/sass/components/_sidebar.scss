@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as v;
+.admin-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: v.$grey-transp;
+    height: 1000px;
+    border-right: 10px solid rgba(255, 255, 255, 0.15);
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
+}
+.side-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.control-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 1000px; 
+    background-color: v.$grey-transp;
+}
+.admin-setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+}
+.user-registe-form{
+    max-width: 600px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10rem;
+    
+}
+.renderWindow {
+    border-top: 1px solid v.$white-transp;
+    
+}
+.render-bg{
+    width: 5vw;
+    margin: auto;
+    margin-top: 25rem;
+    opacity: 0.35;
+    color: v.$white;
+}
+
+.kitchenWindow{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+    height: max-content;
+}

@@ -1,0 +1,20 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as v;
+.stats_card {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px v.$black-transp;
+  background: v.$techblue;
+  color: v.$white;
+  border-radius: 4px;
+}
+
+.stats_card:hover {
+  background: v.$dark-blue;
+  @include table_gradient;
+}
+
+.stats_card:active {
+  transform: translate(0em, 0.2em);
+}

@@ -1,0 +1,145 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as v;
+
+/* ======== button style ======== */
+
+.mainButton {
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px v.$black-transp;
+  background: v.$brown;
+  color: v.$white;
+  border-radius: 4px;
+  width: 170px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 2.5rem;
+  line-height: 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 18px;
+  // color:v.$white;
+  // border: 1px solid v.$techgreen-light;
+  // background-image: linear-gradient(-180deg, v.$techgreen-light 0%, v.$techgreen 100%);
+  // box-shadow: 0 1rem 1.25rem 0 v.$techblue-transp
+  //   0 -0.25rem 1.5rem v.$techgreen inset,
+  //   0 0.75rem 0.5rem v.$white-transp inset,
+  //   0 0.25rem 0.5rem 0 v.$techgreen inset;
+}
+
+.mainButton span {
+  margin: auto;
+  color: v.$white;
+  background-image: linear-gradient(0deg, v.$light-brown 0%, v.$white 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.mainButton::before{
+  // content: "";
+  // display: block;
+  // height: 0.25rem;
+  // position: absolute;
+  // top: 0.3rem;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // width: calc(100% - 6.5rem);
+  // background: v.$white;
+  // border-radius: 100%;
+  // opacity: 0.7;
+}
+
+.mainButton:hover {
+  transform: translateY(-3px);
+  transform: scale(1.05);
+  background: v.$gold;
+  @include table_gradient;
+}
+
+.orange {
+  background-color: v.$yellow;
+  color: v.$white;
+}
+
+.grey {
+  background-color: v.$grey;
+  color: v.$white;
+}
+
+.result {
+  color: v.$white;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.8em;
+  margin-top: -1.5em;
+  font-size: 2.5em;
+}
+.error {
+  color: v.$orange;
+  font-size: 12px;
+  margin-top: -25px;
+}
+
+.rmdp-input{
+  min-width:100px;
+  text-align: center;
+}
+
+
+.badge{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 7px;
+  padding: 3px;
+  font-weight: 900;
+  position: relative;
+  bottom:8px;
+}
+.messageUserList{
+  display: flex;
+  align-items: baseline;
+}
+.badge-message{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  padding: 3px;
+  font-weight: 900;
+  position: relative;
+  bottom:15px;
+  left:-120px
+}
+.badge-message-readed{
+  display: none;
+}
+.icons{
+  display: block !important;
+  color: v.$white !important;
+  cursor: pointer;
+  font-size: 2rem !important;
+}
+.icons:hover {
+  transform: translateY(-6px);
+  transform: scale(1.3);
+}
+
+.mediaIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  font-size: 2rem;
+  border-top: 2px solid v.$white;
+  padding: 1rem 1rem 1rem 0;
+}
+.user-avatar {
+  width: 30px;
+}
+.searchBar-button{
+  padding: 3px 12px;
+  margin-left: 8px;
+  border-radius: 5px;
+  border-style: hidden;
+  background-color: v.$gold;
+  color: v.$white;
+  box-shadow: 3px 3px 3px gray;
+  cursor: pointer;
+}
