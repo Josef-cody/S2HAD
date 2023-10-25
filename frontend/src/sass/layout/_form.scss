@@ -1,0 +1,25 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as v;
+.login-form {
+  max-width: 300px;
+  margin: auto;
+}
+.login-container{
+  width: 200px;
+  margin: auto;
+}
+  .modal-body{
+    background-color: v.$white-transp;
+  }
+  .modal-header{
+    @include table_gradient;
+    color: v.$white;
+  }
+  .modal-footer{
+    @include table_gradient;
+    color: v.$white;
+  }
+
+  .home-form{
+    min-height: 90vh;
+  }

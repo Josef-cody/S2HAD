@@ -1,0 +1,37 @@
+
+$white:#f5f5f5;
+$white-transp:rgba(245, 245, 245, 0.75);
+$red:#de0457;
+$blue:#0078ff;
+$dark-blue:#020024;
+$yellow:#ffb400;
+$techblue:#004d6b;
+$techblue-transp:#004d6b8a;
+$techblue-middle:#84cce0;
+$techblue-middle-trans:#84cce0c8;
+$techgreen:#324347;
+$techgreen-light:#81cce2;
+$techgreen-middle:#84dee0;
+$orange: #ff4d00;
+$gold: #795e06;
+$light-gold: #a9975d;
+$brown: #8a663f;
+$light-brown:#ffaa89;
+$white-transp:#f5f5f566;
+$grey:#505050;
+$grey-transp:#d7d7d759;
+$blue-grey:#838EA4;
+$black:black;
+$black-transp:#00000099;
+
+$theme-colors: (
+  'primary':$red,
+  'secondary':$blue,
+  'warning':$yellow,
+);
+
+$list1:$techblue, $techblue-middle,$techblue;
+$list2:$techgreen, $techgreen-middle,$techgreen;
+
+
+$cursors: pointer auto inherit;
